@@ -13,6 +13,7 @@
 # limitations under the License.
 
 ifeq ($(CIPHER_PIXELIFY), true)
+$(warning CIPHER_PIXELIFY is defined, building with Pixel Stuff, this is enabled by default on OFFICIAL Builds, Unset if you are not sure)
 # Automated
 $(call inherit-product-if-exists, vendor/google/pixel/pixel-vendor.mk)
 
