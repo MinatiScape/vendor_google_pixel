@@ -12,6 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+ifeq ($(CIPHER_PIXELIFY), true)
 # Automated
 $(call inherit-product-if-exists, vendor/google/pixel/pixel-vendor.mk)
 
@@ -34,3 +35,5 @@ PRODUCT_PRODUCT_PROPERTIES += \
 # Sepolicy
 BOARD_VENDOR_SEPOLICY_DIRS += \
     vendor/google/pixel/sepolicy
+
+endif
